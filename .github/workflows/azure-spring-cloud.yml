@@ -20,4 +20,4 @@ jobs:
     - name: Install Azure Spring Cloud extension
       run: az extension add -y --source https://azureclitemp.blob.core.windows.net/spring-cloud/spring_cloud-0.1.0-py2.py3-none-any.whl
     - name: Deploy to Azure Spring Cloud
-      run: az spring-cloud app deploy --resource-group joedayz --service joedayz-cloud --name weather-service --jar-path target/demo-0.0.1-SNAPSHOT.jar
+      run: az spring-cloud app deploy --resource-group spring-cloud-lab --service azure-spring-cloud-joedayz --name weather-service --jar-path target/demo-0.0.1-SNAPSHOT.jar
